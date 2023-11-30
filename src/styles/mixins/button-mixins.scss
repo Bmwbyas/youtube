@@ -1,0 +1,10 @@
+@import "../variables";
+@mixin iconState{
+	&:hover {
+		background: $secondary-bg-color;
+	}
+	&:active{
+		background: $active-bg-color;
+	}
+
+}

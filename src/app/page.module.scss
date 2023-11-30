@@ -1,0 +1,4 @@
+@import "../styles/mixins/mixins";
+.main{
+    @include flex(row,center,center);
+}

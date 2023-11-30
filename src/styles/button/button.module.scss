@@ -1,0 +1,12 @@
+@import '../mixins/mixins';
+
+.button{
+	width: 100%;
+	height: 100%;
+	@include flex(row,center,center);
+	&.iconButton{
+		@include iconState();
+	}
+
+}
+

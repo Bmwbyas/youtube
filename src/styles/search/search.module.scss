@@ -1,0 +1,43 @@
+@import '../mixins/mixins';
+@import "../variables";
+
+.search__container {
+	width: 100%;
+	max-width: 732px;
+	@include flex(row,flex-start,center);
+	.input__label {
+		width: calc(100% - 64px);
+		border: 1px solid $active-bg-color;
+		border-radius: 40px 0 0 40px;
+		height: 40px;
+		padding-left: 12px;
+		@include flex(row,flex-start,center);
+		.icon__search__container{
+			padding-right: 16px;
+		}
+		.input {
+			width: calc(100% - 32px);
+
+		}
+	}
+	.button__container{
+		height: 40px;
+		width: 64px;
+		border: 1px solid $active-bg-color;
+		background-color: $light-bg-color;
+		border-radius: 0 40px 40px 0;
+		cursor: pointer;
+
+	}
+}
+
+.icon__search {
+	@include img(20px, 20px);
+	background-image: url("/img/icon/search.svg");
+}
+.icon__cross{
+	@extend .icon__search;
+	background-image:url("/img/icon/cross.svg") ;
+	margin-right: 12px;
+
+}

@@ -1,0 +1,40 @@
+@mixin h1 {
+	font-size: 24px;
+	font-weight: 500;
+	@media (max-width: 1024px) {
+		font-size: 22px;
+	}
+}
+
+@mixin h2 {
+	font-size: 20px;
+	font-weight: 500;
+	@media (max-width: 1024px) {
+		font-size: 18px;
+	}
+}
+
+@mixin h3{
+	font-size: 16px;
+	font-weight: 500;
+	@media (max-width: 1024px) {
+		font-size: 14px;
+	}
+}
+
+@mixin b1{
+	font-size: 16px;
+	font-weight: 400;
+	color:$secondary-text-color;
+	@media (max-width: 1024px) {
+		font-size: 14px;
+	}
+}
+@mixin b2{
+	font-size: 14px;
+	font-weight: 400;
+	color:$secondary-text-color;
+	@media (max-width: 1024px) {
+		font-size: 12px;
+	}
+}

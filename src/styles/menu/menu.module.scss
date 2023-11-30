@@ -1,0 +1,13 @@
+@import "../mixins/mixins";
+
+.icon__burger__container {
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50%;
+	@include iconState();
+
+	.icon__burger {
+		@include img(20px, 20px);
+		background-image: url("/img/icon/burger.svg");
+	}
+}

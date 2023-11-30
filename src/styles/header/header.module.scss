@@ -1,0 +1,24 @@
+@import "../mixins/mixins";
+
+.header__container {
+	padding: 0 16px;
+	height: 56px;
+	justify-content: space-between;
+	@include flex(row, space-between, center);
+
+	.header__logo__container {
+		@include flex(row, flex-start, center);
+
+		.icon__logo__container {
+			padding: 18px 14px 18px 16px;
+			.icon__logo {
+				cursor: pointer;
+				@include img(90px, 20px);
+				background-image: url("/img/icon/youtube.svg");
+				background-size: contain;
+			}
+		}
+	}
+}
+
+
